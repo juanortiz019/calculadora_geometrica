@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Geométrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Geométrica</h1>
+        <p class="subtitle">Calcula el área de diferentes figuras geométricas</p>
+    </header>
+
+    <main class="calculator-container">
+        <!-- Triángulo -->
+        <div class="figure-card">
+            <img src="Imagen de WhatsApp 2025-05-22 a las 21.52.25_29b9d1d0.jpg" alt="Triángulo" class="figure-img">
+            <h2>Triángulo</h2>
+            <p class="formula">Área = (base × altura) / 2</p>
+            <div class="input-group">
+                <label for="triangle-base">Base (b):</label>
+                <input type="number" id="triangle-base" placeholder="Ingrese la base" step="any">
+            </div>
+            <div class="input-group">
+                <label for="triangle-height">Altura (h):</label>
+                <input type="number" id="triangle-height" placeholder="Ingrese la altura" step="any">
+            </div>
+            <button onclick="calculateTriangleArea()">Calcular Área</button>
+            <div class="result" id="triangle-result"></div>
+        </div>
+
+        <!-- Círculo -->
+        <div class="figure-card">
+            <img src="Imagen de WhatsApp 2025-05-22 a las 21.52.25_67b6907f.jpg" alt="Círculo" class="figure-img">
+            <h2>Círculo</h2>
+            <p class="formula">Área = π × radio²</p>
+            <div class="input-group">
+                <label for="circle-radius">Radio (r):</label>
+                <input type="number" id="circle-radius" placeholder="Ingrese el radio" step="any">
+            </div>
+            <button onclick="calculateCircleArea()">Calcular Área</button>
+            <div class="result" id="circle-result"></div>
+        </div>
+
+        <!-- Rectángulo -->
+        <div class="figure-card">
+            <img src="Imagen de WhatsApp 2025-05-22 a las 21.52.26_23f33c48.jpg" alt="Rectángulo" class="figure-img">
+            <h2>Rectángulo</h2>
+            <p class="formula">Área = base × altura</p>
+            <div class="input-group">
+                <label for="rectangle-length">Largo (l):</label>
+                <input type="number" id="rectangle-length" placeholder="Ingrese el largo" step="any">
+            </div>
+            <div class="input-group">
+                <label for="rectangle-width">Ancho (a):</label>
+                <input type="number" id="rectangle-width" placeholder="Ingrese el ancho" step="any">
+            </div>
+            <button onclick="calculateRectangleArea()">Calcular Área</button>
+            <div class="result" id="rectangle-result"></div>
+        </div>
+
+        <!-- Trapecio -->
+        <div class="figure-card">
+            <img src="Imagen de WhatsApp 2025-05-22 a las 21.52.26_c2ea8969.jpg" alt="Trapecio" class="figure-img">
+            <h2>Trapecio</h2>
+            <p class="formula">Área = ((B + b) × h) / 2</p>
+            <div class="input-group">
+                <label for="trapezoid-base1">Base mayor (B):</label>
+                <input type="number" id="trapezoid-base1" placeholder="Ingrese base mayor" step="any">
+            </div>
+            <div class="input-group">
+                <label for="trapezoid-base2">Base menor (b):</label>
+                <input type="number" id="trapezoid-base2" placeholder="Ingrese base menor" step="any">
+            </div>
+            <div class="input-group">
+                <label for="trapezoid-height">Altura (h):</label>
+                <input type="number" id="trapezoid-height" placeholder="Ingrese la altura" step="any">
+            </div>
+            <button onclick="calculateTrapezoidArea()">Calcular Área</button>
+            <div class="result" id="trapezoid-result"></div>
+        </div>
+
+        <!-- Cuadrado -->
+        <div class="figure-card">
+            <img src="Imagen de WhatsApp 2025-05-22 a las 21.52.26_a27d4ba3.jpg" alt="Cuadrado" class="figure-img">
+            <h2>Cuadrado</h2>
+            <p class="formula">Área = lado × lado</p>
+            <div class="input-group">
+                <label for="square-side">Lado (l):</label>
+                <input type="number" id="square-side" placeholder="Ingrese el lado" step="any">
+            </div>
+            <button onclick="calculateSquareArea()">Calcular Área</button>
+            <div class="result" id="square-result"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Calculadora Geométrica - Adriana Musse. Juan Ortiz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
